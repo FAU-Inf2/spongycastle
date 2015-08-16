@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.validator;
+package org.spongycastle.mail.smime.validator;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
@@ -34,41 +34,41 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1TaggedObject;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cms.Attribute;
-import org.bouncycastle.asn1.cms.AttributeTable;
-import org.bouncycastle.asn1.cms.CMSAttributes;
-import org.bouncycastle.asn1.cms.Time;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AuthorityKeyIdentifier;
-import org.bouncycastle.asn1.x509.ExtendedKeyUsage;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.KeyPurposeId;
-import org.bouncycastle.cert.jcajce.JcaCertStoreBuilder;
-import org.bouncycastle.cms.SignerInformation;
-import org.bouncycastle.cms.SignerInformationStore;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
-import org.bouncycastle.cms.jcajce.JcaX509CertSelectorConverter;
-import org.bouncycastle.i18n.ErrorBundle;
-import org.bouncycastle.i18n.filter.TrustedInput;
-import org.bouncycastle.i18n.filter.UntrustedInput;
-import org.bouncycastle.jce.PrincipalUtil;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.mail.smime.SMIMESigned;
-import org.bouncycastle.util.Integers;
-import org.bouncycastle.x509.CertPathReviewerException;
-import org.bouncycastle.x509.PKIXCertPathReviewer;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.ASN1InputStream;
+import org.spongycastle.asn1.ASN1OctetString;
+import org.spongycastle.asn1.ASN1Primitive;
+import org.spongycastle.asn1.ASN1Sequence;
+import org.spongycastle.asn1.ASN1TaggedObject;
+import org.spongycastle.asn1.DERIA5String;
+import org.spongycastle.asn1.DEROctetString;
+import org.spongycastle.asn1.cms.Attribute;
+import org.spongycastle.asn1.cms.AttributeTable;
+import org.spongycastle.asn1.cms.CMSAttributes;
+import org.spongycastle.asn1.cms.Time;
+import org.spongycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.spongycastle.asn1.x509.AuthorityKeyIdentifier;
+import org.spongycastle.asn1.x509.ExtendedKeyUsage;
+import org.spongycastle.asn1.x509.Extension;
+import org.spongycastle.asn1.x509.KeyPurposeId;
+import org.spongycastle.cert.jcajce.JcaCertStoreBuilder;
+import org.spongycastle.cms.SignerInformation;
+import org.spongycastle.cms.SignerInformationStore;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoVerifierBuilder;
+import org.spongycastle.cms.jcajce.JcaX509CertSelectorConverter;
+import org.spongycastle.i18n.ErrorBundle;
+import org.spongycastle.i18n.filter.TrustedInput;
+import org.spongycastle.i18n.filter.UntrustedInput;
+import org.spongycastle.jce.PrincipalUtil;
+import org.spongycastle.jce.X509Principal;
+import org.spongycastle.mail.smime.SMIMESigned;
+import org.spongycastle.util.Integers;
+import org.spongycastle.x509.CertPathReviewerException;
+import org.spongycastle.x509.PKIXCertPathReviewer;
 
 public class SignedMailValidator
 {
-    private static final String RESOURCE_NAME = "org.bouncycastle.mail.smime.validator.SignedMailValidatorMessages";
+    private static final String RESOURCE_NAME = "org.spongycastle.mail.smime.validator.SignedMailValidatorMessages";
 
     private static final Class DEFAULT_CERT_PATH_REVIEWER = PKIXCertPathReviewer.class;
 

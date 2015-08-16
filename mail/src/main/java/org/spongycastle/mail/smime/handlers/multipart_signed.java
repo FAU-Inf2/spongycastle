@@ -1,6 +1,6 @@
-package org.bouncycastle.mail.smime.handlers;
+package org.spongycastle.mail.smime.handlers;
 
-import org.bouncycastle.mail.smime.SMIMEStreamingProcessor;
+import org.spongycastle.mail.smime.SMIMEStreamingProcessor;
 
 import javax.activation.ActivationDataFlavor;
 import javax.activation.DataContentHandler;

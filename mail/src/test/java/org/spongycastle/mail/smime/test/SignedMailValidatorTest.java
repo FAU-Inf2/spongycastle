@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime.test;
+package org.spongycastle.mail.smime.test;
 
 import java.io.InputStream;
 import java.security.KeyPair;
@@ -31,19 +31,19 @@ import javax.mail.internet.MimeMultipart;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.x509.X509Extension;
-import org.bouncycastle.cert.jcajce.JcaCertStore;
-import org.bouncycastle.cms.SignerInformation;
-import org.bouncycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
-import org.bouncycastle.cms.test.CMSTestUtil;
-import org.bouncycastle.i18n.ErrorBundle;
-import org.bouncycastle.mail.smime.SMIMESignedGenerator;
-import org.bouncycastle.mail.smime.validator.SignedMailValidator;
-import org.bouncycastle.util.Store;
-import org.bouncycastle.x509.PKIXCertPathReviewer;
-import org.bouncycastle.x509.extension.X509ExtensionUtil;
+import org.spongycastle.asn1.ASN1Encodable;
+import org.spongycastle.asn1.ASN1Encoding;
+import org.spongycastle.asn1.x509.X509Extension;
+import org.spongycastle.cert.jcajce.JcaCertStore;
+import org.spongycastle.cms.SignerInformation;
+import org.spongycastle.cms.jcajce.JcaSimpleSignerInfoGeneratorBuilder;
+import org.spongycastle.cms.test.CMSTestUtil;
+import org.spongycastle.i18n.ErrorBundle;
+import org.spongycastle.mail.smime.SMIMESignedGenerator;
+import org.spongycastle.mail.smime.validator.SignedMailValidator;
+import org.spongycastle.util.Store;
+import org.spongycastle.x509.PKIXCertPathReviewer;
+import org.spongycastle.x509.extension.X509ExtensionUtil;
 
 public class SignedMailValidatorTest extends TestCase
 {
@@ -453,7 +453,7 @@ public class SignedMailValidatorTest extends TestCase
         if (Security.getProvider("BC") == null)
         {
             Security
-                    .addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+                    .addProvider(new org.spongycastle.jce.provider.BouncyCastleProvider());
         }
     }
     

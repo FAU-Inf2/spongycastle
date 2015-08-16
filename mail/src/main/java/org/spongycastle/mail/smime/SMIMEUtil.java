@@ -1,4 +1,4 @@
-package org.bouncycastle.mail.smime;
+package org.spongycastle.mail.smime;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -16,11 +16,11 @@ import javax.mail.internet.ContentType;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMultipart;
 
-import org.bouncycastle.asn1.cms.IssuerAndSerialNumber;
-import org.bouncycastle.cms.CMSTypedStream;
-import org.bouncycastle.jce.PrincipalUtil;
-import org.bouncycastle.mail.smime.util.CRLFOutputStream;
-import org.bouncycastle.mail.smime.util.FileBackedMimeBodyPart;
+import org.spongycastle.asn1.cms.IssuerAndSerialNumber;
+import org.spongycastle.cms.CMSTypedStream;
+import org.spongycastle.jce.PrincipalUtil;
+import org.spongycastle.mail.smime.util.CRLFOutputStream;
+import org.spongycastle.mail.smime.util.FileBackedMimeBodyPart;
 
 public class SMIMEUtil
 {
