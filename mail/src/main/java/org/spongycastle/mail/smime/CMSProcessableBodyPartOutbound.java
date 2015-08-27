@@ -3,9 +3,9 @@ package org.spongycastle.mail.smime;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import javax.mail.BodyPart;
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeBodyPart;
+import korex.mail.BodyPart;
+import korex.mail.MessagingException;
+import korex.mail.internet.MimeBodyPart;
 
 import org.spongycastle.cms.CMSException;
 import org.spongycastle.cms.CMSProcessable;

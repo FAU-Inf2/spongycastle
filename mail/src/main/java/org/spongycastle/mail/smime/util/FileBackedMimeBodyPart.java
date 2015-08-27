@@ -1,8 +1,8 @@
 package org.spongycastle.mail.smime.util;
 
-import javax.mail.MessagingException;
-import javax.mail.internet.InternetHeaders;
-import javax.mail.internet.MimeBodyPart;
+import korex.mail.MessagingException;
+import korex.mail.internet.InternetHeaders;
+import korex.mail.internet.MimeBodyPart;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -1,9 +1,9 @@
 package org.spongycastle.mail.smime.handlers;
 
-import java.awt.datatransfer.DataFlavor;
+import kore.awt.datatransfer.DataFlavor;
 
-import javax.activation.ActivationDataFlavor;
-import javax.mail.internet.MimeBodyPart;
+import korex.activation.ActivationDataFlavor;
+import korex.mail.internet.MimeBodyPart;
 
 public class x_pkcs7_mime 
     extends PKCS7ContentHandler

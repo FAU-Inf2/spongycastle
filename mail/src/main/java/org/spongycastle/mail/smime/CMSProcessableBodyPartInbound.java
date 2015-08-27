@@ -3,8 +3,8 @@ package org.spongycastle.mail.smime;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import javax.mail.BodyPart;
-import javax.mail.MessagingException;
+import korex.mail.BodyPart;
+import korex.mail.MessagingException;
 
 import org.spongycastle.cms.CMSException;
 import org.spongycastle.cms.CMSProcessable;

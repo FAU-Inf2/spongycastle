@@ -13,15 +13,15 @@ import java.util.Enumeration;
 import java.util.List;
 import java.util.Properties;
 
-import javax.activation.CommandMap;
-import javax.activation.MailcapCommandMap;
-import javax.mail.Message;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
+import korex.activation.CommandMap;
+import korex.activation.MailcapCommandMap;
+import korex.mail.Message;
+import korex.mail.Session;
+import korex.mail.Transport;
+import korex.mail.internet.InternetAddress;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMessage;
+import korex.mail.internet.MimeMultipart;
 
 import org.spongycastle.asn1.ASN1EncodableVector;
 import org.spongycastle.asn1.cms.AttributeTable;

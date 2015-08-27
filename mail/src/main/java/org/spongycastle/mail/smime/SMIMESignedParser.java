@@ -12,15 +12,15 @@ import java.io.OutputStream;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
 
-import javax.activation.CommandMap;
-import javax.activation.MailcapCommandMap;
-import javax.mail.BodyPart;
-import javax.mail.MessagingException;
-import javax.mail.Part;
-import javax.mail.Session;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
+import korex.activation.CommandMap;
+import korex.activation.MailcapCommandMap;
+import korex.mail.BodyPart;
+import korex.mail.MessagingException;
+import korex.mail.Part;
+import korex.mail.Session;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMessage;
+import korex.mail.internet.MimeMultipart;
 
 import org.spongycastle.cms.CMSException;
 import org.spongycastle.cms.CMSSignedDataParser;

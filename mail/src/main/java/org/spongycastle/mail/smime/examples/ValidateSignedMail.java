@@ -22,8 +22,8 @@ import java.util.Locale;
 import java.util.Properties;
 import java.util.Set;
 
-import javax.mail.Session;
-import javax.mail.internet.MimeMessage;
+import korex.mail.Session;
+import korex.mail.internet.MimeMessage;
 import javax.security.auth.x500.X500Principal;
 
 import org.spongycastle.asn1.ASN1Encodable;

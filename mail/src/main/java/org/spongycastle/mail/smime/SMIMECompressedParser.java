@@ -4,11 +4,11 @@ import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import javax.mail.MessagingException;
-import javax.mail.Part;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimePart;
+import korex.mail.MessagingException;
+import korex.mail.Part;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMessage;
+import korex.mail.internet.MimePart;
 
 import org.spongycastle.cms.CMSCompressedDataParser;
 import org.spongycastle.cms.CMSException;

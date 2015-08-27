@@ -20,14 +20,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import javax.mail.BodyPart;
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.internet.ContentType;
-import javax.mail.internet.InternetHeaders;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
+import korex.mail.BodyPart;
+import korex.mail.MessagingException;
+import korex.mail.Session;
+import korex.mail.internet.ContentType;
+import korex.mail.internet.InternetHeaders;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMessage;
+import korex.mail.internet.MimeMultipart;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

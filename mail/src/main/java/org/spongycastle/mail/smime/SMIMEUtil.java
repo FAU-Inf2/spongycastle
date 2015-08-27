@@ -10,11 +10,11 @@ import java.security.cert.CertificateParsingException;
 import java.security.cert.X509Certificate;
 import java.util.Enumeration;
 
-import javax.mail.BodyPart;
-import javax.mail.MessagingException;
-import javax.mail.internet.ContentType;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMultipart;
+import korex.mail.BodyPart;
+import korex.mail.MessagingException;
+import korex.mail.internet.ContentType;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMultipart;
 
 import org.spongycastle.asn1.cms.IssuerAndSerialNumber;
 import org.spongycastle.cms.CMSTypedStream;

@@ -1,16 +1,16 @@
 package org.spongycastle.mail.smime.handlers;
 
-import java.awt.datatransfer.DataFlavor;
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import javax.activation.ActivationDataFlavor;
-import javax.activation.DataContentHandler;
-import javax.activation.DataSource;
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeBodyPart;
+import kore.awt.datatransfer.DataFlavor;
+import korex.activation.ActivationDataFlavor;
+import korex.activation.DataContentHandler;
+import korex.activation.DataSource;
+import korex.mail.MessagingException;
+import korex.mail.internet.MimeBodyPart;
 
 import org.spongycastle.mail.smime.SMIMEStreamingProcessor;
 
@@ -54,7 +54,7 @@ public class PKCS7ContentHandler
     {
         return _dfs;
     }
-    
+
     public void writeTo(
         Object obj, 
         String mimeType,

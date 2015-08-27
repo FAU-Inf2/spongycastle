@@ -4,14 +4,14 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Properties;
 
-import javax.activation.DataHandler;
-import javax.activation.FileDataSource;
-import javax.mail.Address;
-import javax.mail.Message;
-import javax.mail.Session;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
+import korex.activation.DataHandler;
+import korex.activation.FileDataSource;
+import korex.mail.Address;
+import korex.mail.Message;
+import korex.mail.Session;
+import korex.mail.internet.InternetAddress;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMessage;
 
 import org.spongycastle.cms.jcajce.ZlibCompressor;
 import org.spongycastle.mail.smime.SMIMECompressedGenerator;

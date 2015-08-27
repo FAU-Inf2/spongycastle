@@ -9,12 +9,12 @@ import java.security.cert.X509Certificate;
 import java.util.Enumeration;
 import java.util.Properties;
 
-import javax.mail.Address;
-import javax.mail.Message;
-import javax.mail.Session;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
+import korex.mail.Address;
+import korex.mail.Message;
+import korex.mail.Session;
+import korex.mail.internet.InternetAddress;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMessage;
 
 import org.spongycastle.cms.CMSAlgorithm;
 import org.spongycastle.cms.jcajce.JceCMSContentEncryptorBuilder;
@@ -83,8 +83,9 @@ public class CreateEncryptedMail
         // create the generator for creating an smime/encrypted message
         //
         SMIMEEnvelopedGenerator  gen = new SMIMEEnvelopedGenerator();
-          
-        gen.addRecipientInfoGenerator(new JceKeyTransRecipientInfoGenerator((X509Certificate)chain[0]).setProvider("BC"));
+        JceKeyTransRecipientInfoGenerator infoGenerator =
+                new JceKeyTransRecipientInfoGenerator((X509Certificate)chain[0]).setProvider("BC");
+        gen.addRecipientInfoGenerator(infoGenerator);
 
         //
         // create a subject key id - this has to be done the same way as

@@ -12,10 +12,10 @@ import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 
 import javax.crypto.Cipher;
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
+import korex.mail.MessagingException;
+import korex.mail.Session;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMessage;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

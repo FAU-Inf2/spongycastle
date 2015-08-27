@@ -2,15 +2,15 @@ package org.spongycastle.mail.smime.handlers;
 
 import org.spongycastle.mail.smime.SMIMEStreamingProcessor;
 
-import javax.activation.ActivationDataFlavor;
-import javax.activation.DataContentHandler;
-import javax.activation.DataSource;
-import javax.mail.MessagingException;
-import javax.mail.Multipart;
-import javax.mail.internet.ContentType;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMultipart;
-import java.awt.datatransfer.DataFlavor;
+import korex.activation.ActivationDataFlavor;
+import korex.activation.DataContentHandler;
+import korex.activation.DataSource;
+import korex.mail.MessagingException;
+import korex.mail.Multipart;
+import korex.mail.internet.ContentType;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMultipart;
+import kore.awt.datatransfer.DataFlavor;
 import java.io.BufferedInputStream;
 import java.io.FilterOutputStream;
 import java.io.IOException;

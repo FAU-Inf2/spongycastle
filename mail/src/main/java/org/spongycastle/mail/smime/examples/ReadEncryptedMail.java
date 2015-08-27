@@ -7,9 +7,9 @@ import java.security.cert.X509Certificate;
 import java.util.Enumeration;
 import java.util.Properties;
 
-import javax.mail.Session;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
+import korex.mail.Session;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMessage;
 
 import org.spongycastle.cms.RecipientId;
 import org.spongycastle.cms.RecipientInformation;

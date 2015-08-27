@@ -28,11 +28,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Vector;
 
-import javax.mail.Address;
-import javax.mail.MessagingException;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
+import korex.mail.Address;
+import korex.mail.MessagingException;
+import korex.mail.internet.InternetAddress;
+import korex.mail.internet.MimeMessage;
+import korex.mail.internet.MimeMultipart;
 
 import org.spongycastle.asn1.ASN1Encoding;
 import org.spongycastle.asn1.ASN1InputStream;

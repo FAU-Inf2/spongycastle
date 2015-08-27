@@ -4,8 +4,8 @@ package org.spongycastle.mail.smime.test;
 import junit.extensions.TestSetup;
 import junit.framework.Test;
 
-import javax.activation.CommandMap;
-import javax.activation.MailcapCommandMap;
+import korex.activation.CommandMap;
+import korex.activation.MailcapCommandMap;
 import java.security.Security;
 
 class SMIMETestSetup extends TestSetup 

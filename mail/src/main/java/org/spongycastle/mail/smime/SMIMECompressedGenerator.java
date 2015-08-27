@@ -5,11 +5,11 @@ import java.io.OutputStream;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
 
-import javax.activation.CommandMap;
-import javax.activation.MailcapCommandMap;
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
+import korex.activation.CommandMap;
+import korex.activation.MailcapCommandMap;
+import korex.mail.MessagingException;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMessage;
 
 import org.spongycastle.cms.CMSCompressedDataGenerator;
 import org.spongycastle.cms.CMSCompressedDataStreamGenerator;

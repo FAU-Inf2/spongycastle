@@ -1,6 +1,6 @@
 package org.spongycastle.mail.smime.util;
 
-import javax.mail.internet.SharedInputStream;
+import korex.mail.internet.SharedInputStream;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;

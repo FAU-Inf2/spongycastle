@@ -3,9 +3,9 @@ package org.spongycastle.mail.smime.examples;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-import javax.mail.Session;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
+import korex.mail.Session;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMessage;
 
 import org.spongycastle.cms.jcajce.ZlibExpanderProvider;
 import org.spongycastle.mail.smime.SMIMECompressed;

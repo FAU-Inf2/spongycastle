@@ -3,14 +3,14 @@ package org.spongycastle.mail.smime;
 import java.io.IOException;
 import java.io.InputStream;
 
-import javax.mail.MessagingException;
-import javax.mail.Part;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimePart;
-
 import org.spongycastle.cms.CMSCompressedData;
 import org.spongycastle.cms.CMSException;
+
+import korex.mail.MessagingException;
+import korex.mail.Part;
+import korex.mail.internet.MimeBodyPart;
+import korex.mail.internet.MimeMessage;
+import korex.mail.internet.MimePart;
 
 /**
  * containing class for an S/MIME pkcs7-mime MimePart.
@@ -18,10 +18,10 @@ import org.spongycastle.cms.CMSException;
 public class SMIMECompressed
     extends CMSCompressedData
 {
-    MimePart                message;
+    MimePart message;
 
     private static InputStream getInputStream(
-        Part    bodyPart)
+        Part bodyPart)
         throws MessagingException
     {
         try
@@ -35,7 +35,7 @@ public class SMIMECompressed
     }
 
     public SMIMECompressed(
-        MimeBodyPart    message) 
+        MimeBodyPart message)
         throws MessagingException, CMSException
     {
         super(getInputStream(message));
@@ -44,7 +44,7 @@ public class SMIMECompressed
     }
 
     public SMIMECompressed(
-        MimeMessage    message) 
+        MimeMessage message)
         throws MessagingException, CMSException
     {
         super(getInputStream(message));
